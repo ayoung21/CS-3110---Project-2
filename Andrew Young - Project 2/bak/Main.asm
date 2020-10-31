@@ -12,19 +12,11 @@
 PROGRAM_START
 ; start your code here        
 
-; copy sprite data
-        LDX #64
-sprite_loop
-        LDA ANT_DATA,X
-        STA $2E80,X
-        DEX
-        BNE sprite_loop
-
 ; do not write code past this line
 ; the following rts instruction is required to exit the program
         rts
 
-; pixel data for the ant data
+; pixel data for the ant
 ANT_DATA
  BYTE $00,$00,$00
  BYTE $00,$00,$00
