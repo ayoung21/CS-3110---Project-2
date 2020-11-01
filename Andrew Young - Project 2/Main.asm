@@ -38,6 +38,10 @@ sprite_colors
         DEX
         BNE sprite_colors
 
+; change background color
+        LDA #13
+        STA $D021
+
 ; set sprite x locations
         LDX #16
         LDA #100
